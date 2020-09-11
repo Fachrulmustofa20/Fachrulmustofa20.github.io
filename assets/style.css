@@ -1,0 +1,218 @@
+/*Reset CSS*/
+*{
+	font-family: 'Quicksand', sans-serif;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+/* Loader*/
+
+
+/* header */
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 10px;
+	z-index: 10;
+	transition: 0.5s;
+}
+header .logo{
+	position: relative;
+	color: #4D4D4D;
+	font-weight: 600;
+	font-size: 20px;
+	transition: 0.5s;
+	margin: 10px 10px 10px 92px;
+	letter-spacing: 1px;
+}
+.logo img{
+	height: 20px;
+}
+.logo1{
+	color: #FFC71A;
+}
+header ul{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 92px;
+}
+header ul li{
+	position: relative;
+	list-style: none;
+}
+header ul li a{
+	position: relative;
+	margin: 0 30px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #fff;
+	transition: 0.5s;
+}
+header ul li a:after{
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 2px;
+	left: 50%;
+	position: absolute;
+	background: #fff;
+	transition: width 0.4s ease 0s, left 0.4s ease 0s;
+	width: 0;
+}
+header ul li a:hover:after{
+	width: 100%;
+	left: 0;
+}
+/* Banner */
+.banner{
+	background-image: url("./img/background-banner-right.svg"),url("./img/background-banner-left.svg");
+	background-repeat: no-repeat, no-repeat;
+	height: 625px;
+	position: relative;
+	background-position-x: right, -43px;
+	background-position-y: 0, 170px;
+}
+.container{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	justify-content: center;
+	margin: 0 92px;
+}
+.highlight{
+	background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #FFC71A 35%);
+	color: #4D4D4D;
+	font-size: 45px;
+}
+.banner-left{
+	margin-top: 180px;
+	color: #4D4D4D;
+}
+.banner-left h2{
+	font-size: 30px;
+	margin: 0;
+}
+.banner-left h1{
+	font-size: 45px;
+	margin: 10px 0;
+	color: #604AF4;
+}
+.banner-left p{
+	font-size: 18px;
+	margin: 10px 0;
+}
+.banner-left .button-wrapper{
+	margin: 40px 0;
+}
+.btn{
+	padding: 8px 21px;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 5px;
+	border: 1px solid #604AF4;
+	cursor: pointer;
+}
+.btn-primary{
+	background-color: #604AF4;
+	transition: .5s;
+}
+.btn-primary:hover{
+	background-color: #4e3eb3;
+}
+.btn-secondary{
+	background-color: #fff;
+	padding: 8px 11px;
+	color: #604AF4;
+	border: 1px solid #604AF4;
+	transition: .5s;
+}
+.btn-secondary:hover{
+	background-color: #604AF4;
+	color: #fff;
+}
+.shadow{
+	box-shadow: 0px 0px 12px rgba(0,0,0,0.3);
+}
+.ml-1{
+	margin-left: 10px;
+}
+.hr-style{
+	overflow: visible;
+	padding: 0;
+	border: none;
+	border-top: medium double #333;
+	color: #333;
+	text-align: center;
+}
+hr{
+	margin: 50px 0 5px;
+	width: 250px;
+}
+.hr-style:after{
+	content: "§";
+	display: inline-block;
+	position: relative;
+	top: -0.7em;
+	font-size: 1.5em;
+	padding: 0 0.25em;
+}
+.social-wrapper{
+	margin-left: 40px;
+}
+.social-wrapper a{
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+	margin-left: 10px;
+}
+.fa-instagram{
+	padding: 10px 12px;
+	background-color: #4D4D4D;
+	border-radius: 50%;
+	transition: .5s;
+}
+.fa-instagram:hover{
+	background-color: #DF4897;
+}
+.fa-linkedin{
+	padding: 10px 12px;
+	background-color: #4D4D4D;
+	border-radius: 50%;
+	transition: .5s;
+}
+.fa-linkedin:hover{
+	background-color: #2867B2;
+}
+.fa-github{
+	padding: 10px 12px;
+	background-color: #4D4D4D;
+	border-radius: 50%;
+	transition: .5s;
+}
+.fa-github:hover{
+	background-color: #2A3F4C;
+}
+.banner-right img{
+	height: 575px;
+	margin-top: 50px;	
+}
