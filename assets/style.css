@@ -73,9 +73,12 @@ header ul li a:after{
 	height: 2px;
 	left: 50%;
 	position: absolute;
-	background: #fff;
+	background: #604AF4;
 	transition: width 0.4s ease 0s, left 0.4s ease 0s;
 	width: 0;
+}
+header ul li a:hover{
+	color: #604AF4;
 }
 header ul li a:hover:after{
 	width: 100%;
@@ -216,11 +219,11 @@ hr{
 }
 /* About us */
 .about{
-	background-image: url("./img/bg-about.svg");
-	background-repeat: no-repeat;
-	background-position: right;
-	
+	background-image: url("./img/bg-about-right.svg"), url("./img/bg-about-left.svg");
+	background-repeat: no-repeat, no-repeat;
+	background-position: right,left;	
 	margin-top: 30px;
+	height: 420px;
 }
 .about-desc{
 	margin-top: 50px;
