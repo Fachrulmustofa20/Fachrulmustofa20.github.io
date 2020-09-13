@@ -97,12 +97,10 @@ header ul li a:hover:after{
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	justify-content: center;
-	margin: 0 92px;
+	padding: 0 100px;
 }
 .highlight{
-	background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #FFC71A 35%);
-	color: #4D4D4D;
-	font-size: 45px;
+	background: linear-gradient(180deg, rgba(255,255,255,0) 60%, #FFC71A 40%);
 }
 .banner-left{
 	margin-top: 180px;
@@ -215,4 +213,29 @@ hr{
 .banner-right img{
 	height: 575px;
 	margin-top: 50px;	
+}
+/* About us */
+.about{
+	background-image: url("./img/bg-about.svg");
+	background-repeat: no-repeat;
+	background-position: right;
+	
+	margin-top: 30px;
+}
+.about-desc{
+	margin-top: 50px;
+}
+.text-center{
+	text-align: center;
+}
+.about h1{
+	color: #4D4D4D;
+	font-size: 28px;
+}
+.about p{
+	text-align: justify;
+}
+.img-about img{
+	height: 380px;
+	padding-left: 70px;
 }
