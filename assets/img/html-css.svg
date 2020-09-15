@@ -1,0 +1,10 @@
+<svg id="html" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <path id="Path_114" data-name="Path 114" d="M512,256a254.7,254.7,0,1,1-17.982-94.438A255.237,255.237,0,0,1,512,256Z" fill="#e67e22"/>
+  <g id="Group_8" data-name="Group 8">
+    <path id="Path_117" data-name="Path 117" d="M73.968,45.213V435.994A256.129,256.129,0,0,0,108.5,465.262h295a256.661,256.661,0,0,0,28.035-22.925H96.893V68.138H471.081v326.75a254.613,254.613,0,0,0,22.936-44.45V45.213Z" fill="#f2f2f2"/>
+  </g>
+  <circle id="Ellipse_13" data-name="Ellipse 13" cx="40.615" cy="40.615" r="40.615" transform="translate(47.24 298.528)" fill="#3f4a43"/>
+  <text id="HTML-2" data-name="HTML" transform="translate(138 287)" fill="#f2f2f2" font-size="90" font-family="Impact"><tspan x="0" y="0">HTML</tspan></text>
+  <text id="CSS" transform="translate(308 405)" fill="#f2f2f2" font-size="90" font-family="Impact"><tspan x="0" y="0">CSS</tspan></text>
+  <text id="_" data-name="&amp;" transform="translate(245 364)" fill="#f2f2f2" font-size="80" font-family="Impact"><tspan x="0" y="0">&amp;</tspan></text>
+</svg>

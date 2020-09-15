@@ -91,16 +91,18 @@ header ul li a:hover:after{
 	height: 625px;
 	position: relative;
 	background-position-x: right, -43px;
-	background-position-y: 0, 170px;
+	background-position-y: 0, 110px;
 }
 .container{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: 1fr;
-	grid-column-gap: 0px;
+	grid-column-gap: 16px;
 	grid-row-gap: 0px;
 	justify-content: center;
-	padding: 0 100px;
+	padding: 0 120px;
+	max-width: 1170px;
+	margin: 0 auto;
 }
 .highlight{
 	background: linear-gradient(180deg, rgba(255,255,255,0) 60%, #FFC71A 40%);
@@ -114,7 +116,7 @@ header ul li a:hover:after{
 	margin: 0;
 }
 .banner-left h1{
-	font-size: 45px;
+	font-size: 50px;
 	margin: 10px 0;
 	color: #604AF4;
 }
@@ -215,6 +217,7 @@ hr{
 }
 .banner-right img{
 	height: 575px;
+	margin-left: 50px;
 	margin-top: 50px;	
 }
 /* About us */
@@ -225,6 +228,17 @@ hr{
 	margin-top: 30px;
 	height: 420px;
 }
+.container-about{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 1fr;
+	grid-column-gap: 16px;
+	grid-row-gap: 0px;
+	justify-content: center;
+	padding: 0 120px;
+	max-width: 1170px;
+	margin: 0 auto;
+}
 .about-desc{
 	margin-top: 50px;
 }
@@ -233,11 +247,147 @@ hr{
 }
 .about h1{
 	color: #4D4D4D;
-	font-size: 28px;
+	font-size: 25px;
 }
 .about p{
 	text-align: justify;
 }
 .img-about img{
 	height: 380px;
+}
+/* Skills */
+.heading{
+	text-align: center;
+}
+.heading h1{
+	color: #4D4D4D;
+	font-size: 25px;
+	margin: 0;
+	padding-top: 40px;
+	padding-bottom: 25px;
+}
+.skills{
+	height: 500px;
+	background-color: #F8F8F8;
+}
+.container-skills{
+	padding: 0 120px;
+	max-width: 1170px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.card{
+	width: 250px;
+	height: 270px;
+	margin: 12px;
+	background: #fff;
+	border-top-right-radius: 10px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	box-shadow: 0 14px 26px rgba(0,0,0,0.04);
+	transition: all 0.3s ease-out;
+	text-decoration: none;
+}
+.card:hover{
+	transform: translateY(-5px) scale(1.005) translateZ(0);
+  	box-shadow: 0 24px 36px rgba(0,0,0,0.11),
+    0 24px 46px var(--box-shadow-color);
+}
+.card:hover .overlay{
+	transform: scale(4) translateZ(0);
+}
+.card:hover .circle{
+	border-color: var(--bg-color-light);
+  	background: var(--bg-color);
+}
+.card:hover .circle:after{
+	background: var(--bg-color-light);
+}
+.card:hover h6{
+	color: var(--text-color-hover);
+}
+.card:active{
+	transform: scale(1) translateZ(0);
+  	box-shadow: 0 15px 24px rgba(0,0,0,0.11),
+    0 15px 24px var(--box-shadow-color);
+}
+.card h6{
+	font-size: 14px;
+  	color: #4C5656;
+  	margin-top: 20px;
+  	z-index: 7;
+  	transition: color 0.3s ease-out;
+}
+.circle{
+	width: 131px;
+	height: 131px;
+	border-radius: 50%;
+	background: #fff;
+	border: 2px solid var(--bg-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 1;
+	transition: all 0.3s ease-out;
+}
+.circle:after{
+	content: "";
+	width: 118px;
+	height: 118px;
+	display: block;
+	position: absolute;
+	background: var(--bg-color);
+	border-radius: 50%;
+	top: 7px;
+	left: 7px;
+	transition: opacity 0.3s ease-out;
+}
+.circle img{
+	z-index: 10000;
+	transform: translateZ(0);
+	width: 90px;
+}
+.overlay{
+	width: 118px;
+	position: absolute; 
+	height: 118px;
+	border-radius: 50%;
+	background: var(--bg-color);
+	top: 37px;
+	left: 60px;
+	z-index: 0;
+	transition: transform 0.3s ease-out;
+	  
+}
+.javascript{
+	--bg-color: #ffd861;
+	--bg-color-light: #ffeeba;
+	--text-color-hover: #4C5656;
+	--box-shadow-color: rgba(255, 215, 97, 0.48);
+}
+.html{
+	--bg-color: #faa459;
+	--bg-color-light: #fcd8b9;
+	--text-color-hover: #4C5656;
+	--box-shadow-color: rgba(230, 126, 34, 0.48);
+}
+.php{
+	--bg-color: #acb0ce;
+	--bg-color-light: #8890b4;
+	--text-color-hover: #4C5656;
+	--box-shadow-color: rgba(230, 126, 34, 0.48);
+}
+.python{
+	--bg-color: #b4c5d3;
+	--bg-color-light: #4e7ea5;
+	--text-color-hover: #4C5656;
+	--box-shadow-color: rgba(52, 108, 155, 0.48);
 }

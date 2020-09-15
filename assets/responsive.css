@@ -1,0 +1,38 @@
+/* layout tablet */
+@media (max-width: 960px) {
+    header .logo{
+        margin: 10px 10px 10px 60px;
+    }
+    header ul{
+        margin-right: 90px;
+    }
+    .banner-right img{
+        margin-left: 0;
+        height: 500px;
+    }
+}
+@media (max-width: 720px) {
+    .banner-right img{
+        display: none;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        text-align: center;
+    }
+    .hr-style{
+        margin: 0;
+    }
+    hr{
+        width: 100%;
+    }
+    .social-wrapper{
+        margin: 0;
+    }
+}
+
+/* layout smartphone */
+@media (max-width: 540px) {
+    
+}
